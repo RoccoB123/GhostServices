@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $db   = 'ghostvpn';
-$user = 'root';         // change if needed
+$user = 'Rocco';         // change if needed
 $pass = '';             // change if needed
 $charset = 'utf8mb4';
 
