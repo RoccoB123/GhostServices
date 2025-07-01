@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+.page-title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2em;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 60px;
+  border: white;
+}
+
+.card {
+  background: black;
+  border: 2px solid white; /* ✅ White border */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+    margin-top: 5px;
+  width: 40%;
+  height: 160px;
+  object-fit: cover;
+   display: block;
+    margin: 0 auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-top: 50px;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: white;
+}
+
+.card button {
+  margin: 16px;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #0056b3;
+}
+
+
+
+
+/* Optional: Make it stack on small screens */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
