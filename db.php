@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'ghostvpn';
 $user = 'Rocco';         // change if needed
-$pass = '';             // change if needed
+$pass = 'test';             // change if needed
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
